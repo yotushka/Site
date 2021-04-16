@@ -1,0 +1,44 @@
+.search {
+    background-image: url(file:///C:/Users/Admin/Desktop/WEB-дизайн/WEB-дизайн%203/images/stilnaya-obuv-dropshipping-1920x1080.jpg)no-repeat;
+    background-size: 100%;
+    border: 1px solid red;
+    height: 800px;
+    width: 1200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* @media (max-widht: 600px){
+    .search{
+        background-size: 30%;
+    }
+} */
+    
+#windowsearch {
+    display: flex;
+    justify-content: space-between;
+    height: 75.5px;
+    width: 800px;
+    margin-top: 270px;
+}
+
+#buttonsearch{
+    transform: scale(1.0);
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 75px;
+}
+
+input[type=text]{
+    width:  647px;
+    height: 73px;
+    border: 0px;
+    font-size: xx-large;
+    padding-left: 10px;
+ }
+ input[type=text]:focus{
+    cursor: text;
+ }

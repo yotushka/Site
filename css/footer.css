@@ -1,0 +1,16 @@
+footer {
+    
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color:rgba(220, 220, 220, 1);
+    height: 100px;
+    max-width: 1200px;
+}
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100px;
+    width: 1200px;
+}

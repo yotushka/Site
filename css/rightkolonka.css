@@ -1,0 +1,267 @@
+.rightcolonka {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+    border: 2px solid rgb(0, 128, 6);
+    height: auto;
+}
+#buttonkupit{
+    transform:scale(1.6);
+    opacity:0.9;
+    cursor:pointer;
+}
+
+.povsakdenni{
+    display: flex;
+    justify-content: space-evenly;
+    margin: 0 50px;
+}
+.povsakdenni div{
+    width: 20%;
+    border: 1px solid blue;
+}
+#povsakd {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: x-large;
+    border: 1px solid rgb(0, 2, 128);
+    height: 60px;
+    width: 435px;
+}
+
+#photokros1 {
+    background-image: url(file:///C:/Users/Admin/Desktop/WEB-дизайн/WEB-дизайн%203/images/5903419847127_02_mg.jpg);
+    background-size: 100%;
+    margin-top: -60px;
+    border: 1px solid rgb(0, 2, 128);
+    height: 200px;
+    width: 200px;
+}
+#photokros2 {
+    /* background-image: url(file:///C:/Users/Admin/Desktop/WEB-дизайн/WEB-дизайн%203/images/0000200825571_01_mn.jpg);
+    background-size: 100%;
+    margin-top: -60px;
+    border: 1px solid rgb(0, 2, 128);
+    height: 200px;
+    width: 200px; */
+}
+#photokros3 {
+    background-image: url(file:///C:/Users/Admin/Desktop/WEB-дизайн/WEB-дизайн%203/images/0000201241776_01_ws.jpg);
+    background-size: 100%;
+    margin-top: -60px;
+    border: 1px solid rgb(0, 2, 128);
+    height: 200px;
+    width: 200px;
+}
+#photokros4 {
+    background-image: url(file:///C:/Users/Admin/Desktop/WEB-дизайн/WEB-дизайн%203/images/0000206440426_01_kk.jpg);
+    background-size: 100%;
+    margin-top: -60px;
+    border: 1px solid rgb(0, 2, 128);
+    height: 200px;
+    width: 200px;
+}
+#photokros5 {
+    background-image: url(file:///C:/Users/Admin/Desktop/WEB-дизайн/WEB-дизайн%203/images/0000206525161_01_pac.jpg);
+    background-size: 100%;
+    margin-top: -60px;
+    border: 1px solid rgb(0, 2, 128);
+    height: 200px;
+    width: 200px;
+}
+#photokros6 {
+    background-image: url(file:///C:/Users/Admin/Desktop/WEB-дизайн/WEB-дизайн%203/images/0000200824840_01_mt.jpg);
+    background-size: 100%;
+    margin-top: -60px;
+    border: 1px solid rgb(0, 2, 128);
+    height: 200px;
+    width: 200px;
+}
+#photokros7 {
+    background-image: url(file:///C:/Users/Admin/Desktop/WEB-дизайн/WEB-дизайн%203/images/0000206525147_01_kk.jpg);
+    background-size: 100%;
+    margin-top: -60px;
+    border: 1px solid rgb(0, 2, 128);
+    height: 200px;
+    width: 200px;
+}
+#photokros8 {
+    background-image: url(file:///C:/Users/Admin/Desktop/WEB-дизайн/WEB-дизайн%203/images/5903698183183_01_wj.jpg);
+    background-size: 100%;
+    margin-top: -60px;
+    border: 1px solid rgb(0, 2, 128);
+    height: 200px;
+    width: 200px;
+}
+#photokros9 {
+    background-image: url(file:///C:/Users/Admin/Desktop/WEB-дизайн/WEB-дизайн%203/images/0000208033725_01_rz.jpg);
+    background-size: 100%;
+    margin-top: -60px;
+    border: 1px solid rgb(0, 2, 128);
+    height: 200px;
+    width: 200px;
+}
+
+#photokros10 {
+    background-image: url(file:///C:/Users/Admin/Desktop/WEB-дизайн/WEB-дизайн%203/images/0000208572620_01_rz.jpg);
+    background-size: 100%;
+    margin-top: -60px;
+    border: 1px solid rgb(0, 2, 128);
+    height: 200px;
+    width: 200px;
+}
+
+#photokros11 {
+    background-image: url(file:///C:/Users/Admin/Desktop/WEB-дизайн/WEB-дизайн%203/images/0000208465793_01_rz.jpg);
+    background-size: 100%;
+    margin-top: -60px;
+    border: 1px solid rgb(0, 2, 128);
+    height: 200px;
+    width: 200px;
+}
+
+#photokros12 {
+    background-image: url(file:///C:/Users/Admin/Desktop/WEB-дизайн/WEB-дизайн%203/images/0000208397650_01_rz.jpg);
+    background-size: 100%;
+    margin-top: -60px;
+    border: 1px solid rgb(0, 2, 128);
+    height: 200px;
+    width: 200px;
+}
+
+#photokros13 {
+    background-image: url(file:///C:/Users/Admin/Desktop/WEB-дизайн/WEB-дизайн%203/images/0000208503747_01_rz.jpg);
+    background-size: 100%;
+    margin-top: -60px;
+    border: 1px solid rgb(0, 2, 128);
+    height: 200px;
+    width: 200px;
+}
+
+#photokros14 {
+    background-image: url(file:///C:/Users/Admin/Desktop/WEB-дизайн/WEB-дизайн%203/images/0000208569224_01_rz.jpg);
+    background-size: 100%;
+    margin-top: -60px;
+    border: 1px solid rgb(0, 2, 128);
+    height: 200px;
+    width: 200px;
+}
+
+#photokros15 {
+    background-image: url(file:///C:/Users/Admin/Desktop/WEB-дизайн/WEB-дизайн%203/images/0000208531627_01_rz.jpg);
+    background-size: 100%;
+    margin-top: -60px;
+    border: 1px solid rgb(0, 2, 128);
+    height: 200px;
+    width: 200px;
+}
+
+#photokros16 {
+    background-image: url(file:///C:/Users/Admin/Desktop/WEB-дизайн/WEB-дизайн%203/images/0000208453462_01_sw.jpg);
+    background-size: 100%;
+    margin-top: -60px;
+    border: 1px solid rgb(0, 2, 128);
+    height: 200px;
+    width: 200px;
+}
+#photokros17 {
+    background-image: url(file:///C:/Users/Admin/Desktop/WEB-дизайн/WEB-дизайн%203/images/0000207989306_01_jb_kopia.jpg);
+    background-size: 100%;
+    margin-top: -60px;
+    border: 1px solid rgb(0, 2, 128);
+    height: 200px;
+    width: 200px;
+}
+
+#photokros18 {
+    background-image: url(file:///C:/Users/Admin/Desktop/WEB-дизайн/WEB-дизайн%203/images/0000207786776_01_ts.jpg);
+    background-size: 100%;
+    margin-top: -60px;
+    border: 1px solid rgb(0, 2, 128);
+    height: 200px;
+    width: 200px;
+}
+
+#photokros19 {
+    background-image: url(file:///C:/Users/Admin/Desktop/WEB-дизайн/WEB-дизайн%203/images/0000207787605_01_rz.jpg);
+    background-size: 100%;
+    margin-top: -60px;
+    border: 1px solid rgb(0, 2, 128);
+    height: 200px;
+    width: 200px;
+}
+
+#photokros20 {
+    background-image: url(file:///C:/Users/Admin/Desktop/WEB-дизайн/WEB-дизайн%203/images/0000208388573_01_rz.jpg);
+    background-size: 100%;
+    margin-top: -60px;
+    border: 1px solid rgb(0, 2, 128);
+    height: 200px;
+    width: 200px;
+}
+
+
+
+
+#kupit {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    margin-left: 30px;
+    border: 1px solid rgb(0, 2, 128);
+    height: 50px;
+    width: 140px;
+}
+
+/* #kupittext {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(180deg, #CBCACA 0%, #747474 77.4%);
+    border: 1px solid rgb(0, 2, 128);
+    height: 38px;
+    width: 90px;
+} */
+
+#fitness {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: x-large;
+    border: 1px solid rgb(0, 2, 128);
+    height: 60px;
+    width: 435px;
+}
+
+#sport {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: x-large;
+    border: 1px solid rgb(0, 2, 128);
+    height: 60px;
+    width: 435px;
+}
+
+#nike {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: x-large;
+    border: 1px solid rgb(0, 2, 128);
+    height: 60px;
+    width: 435px;
+}
+
+#asics {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: x-large;
+    border: 1px solid rgb(0, 2, 128);
+    height: 60px;
+    width: 435px;
+}
