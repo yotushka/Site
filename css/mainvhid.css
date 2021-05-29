@@ -1,17 +1,19 @@
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
-body{
+
+body {
     font-size: 16px;
     min-width: 320px;
-    
+
     line-height: 1.65;
     font-family: "roboto", sans-serif;
     opacity: 1;
 }
-.page{
+
+.page {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -20,7 +22,8 @@ body{
     overflow: hidden;
     min-height: 100vh;
 }
-header .container{
+
+header .container {
     width: 100vw;
     padding: 0 10px;
     background-color: #E6E6E6;
@@ -30,28 +33,70 @@ header .container{
     align-items: center;
     border-bottom: 1px solid #000;
 }
-header .logo h1{
+
+header .logo h1 {
     font-family: 'ZCOOL QingKe HuangYou', cursive;
 }
-header .logo{
+
+header .logo {
     display: flex;
     align-items: center;
     text-decoration: none;
     font-size: xx-large;
     color: black;
 }
-header .logo img{
+
+header .logo img {
     width: 100px;
     height: 100px;
 }
-header .menu_top li{
+
+nav ul {
+    list-style: none;
+    background-color: gainsboro;
+}
+
+nav>ul>li {
+    float: left;
+}
+
+nav ul::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+nav ul li a {
     display: inline-block;
-    padding: 0 15px;
-}
-header .menu_top li a{
+    padding: 10px 10px;
+    text-decoration: none;
     color: black;
+    width: 100px;
 }
-#main{
+
+nav ul li a:hover {
+    background-color: #950740;
+}
+
+nav ul ul {
+    display: none;
+    position: absolute;
+    z-index: 1;
+}
+
+nav ul li:hover ul {
+    display: block;
+}
+
+
+
+
+
+
+
+
+
+#main {
     width: 100vw;
     height: 100vh;
     background-size: cover;
@@ -63,46 +108,171 @@ header .menu_top li a{
     justify-content: center;
     border-bottom: 1px solid #000;
 }
-#main .container{
+
+#main .container {
     /* margin-top: 100px; */
     padding-top: 150px;
     display: inline-block;
     justify-content: center;
     align-items: center;
 }
-#main .formvhid{
+
+#main .formvhid {
+    z-index: 1;
     display: flex;
     justify-content: center;
     flex-direction: column;
     padding: 0% 5%;
     border-radius: 10%;
-    border: 1px solid red;
+    border: 1px solid pink;
+    /* border: 2px solid rebeccapurple; */
     background-color: rgba(0, 0, 0, .4);
-    
+
 }
 
 
-#buttonvhid button{
+
+.about {
+    height: 100%;
+    width: 100%;
+    padding: 300px 0;
+    background-color: #0d2562;
+    color: #fff;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    z-index: 0;
+}
+
+.about-title {
+    font-family: sans-serif;
+    font-size: 70px;
+    text-align: center;
+    position: relative;
+    opacity: .5;
+}
+
+/* VIDEO */
+.video {
+    top: 50%;
+    width: 1938px;
+    transform: translate(-50%, -50%);
+    opacity: 0.5;
+    left: 50%;
+    z-index: 0;
+    position: absolute;
+}
+
+.about-header {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 110px;
+    -webkit-background-size: cover;
+    background-size: cover;
+    /* background: url(https://denis-creative.com/wp-content/uploads/2018/01/about-header-bg.png) 0 top no-repeat; */
+}
+
+.about-footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 126px;
+    -webkit-background-size: cover;
+    background-size: cover;
+    /* background: url(https://denis-creative.com/wp-content/uploads/2018/01/about-footer-bg.png) 0 top no-repeat; */
+}
+
+.about-header-bg-2 {
+    position: absolute;
+    left: 50%;
+    top: 0;
+    z-index: 1;
+    transform: translate(-50%, -100%);
+    transition: transform 0.9s 0.2s ease;
+    will-change: transform;
+    transform: translate(-50%, 0);
+}
+
+@media (max-width: 768px) {
+    .about {
+        background: url(https://denis-creative.com/wp-content/uploads/2018/01/about-bg.jpg) 0 top no-repeat #0e438b;
+        -webkit-background-size: cover;
+        background-size: cover;
+    }
+
+    .video,
+    .about-header,
+    .about-footer,
+    .about-header-bg-2 {
+        display: none;
+    }
+}
+
+@media (max-width: 480px) {
+    .about-title {
+        font-size: 40px;
+    }
+}
+
+.formvhid input {
+    border-radius: 5px;
+}
+
+.name {
+    color: white;
+    -webkit-text-stroke: 1px pink;
+}
+
+.surname {
+    color: white;
+    -webkit-text-stroke: 1px pink;
+}
+
+.formvhid button {
+    color: black;
+    border-radius: 5px;
+}
+
+.formvhid button:hover {
+    background-color: rgb(218, 218, 218);
+    cursor: pointer;
+    transition: color 0.4 ease-in-out;
+}
+
+.formvhid a {
+    text-decoration: underline;
+    color: white;
+}
+
+.formvhid a:hover {
+    cursor: pointer;
+    color: pink;
+    transition: color 0.4 ease;
+}
+
+#buttonvhid button {
     border: 1px solid black;
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 5px 10px;
 }
-    
-#main .formvhid input{
+
+#main .formvhid input {
     padding: 3px 10px;
 }
 
-#main .formvhid label[for=name]{
-    text-decoration-color: rgb(0, 245, 20);   
+#main .formvhid label[for=name] {
+    text-decoration-color: rgb(0, 245, 20);
 }
 
 
-.poleposhuk{
+.poleposhuk {
     display: flex;
 }
-.poshukbtn{
+
+.poshukbtn {
     cursor: pointer;
     font-size: xx-large;
     width: 20%;
@@ -111,7 +281,8 @@ header .menu_top li a{
     border-bottom-left-radius: 15px;
     border: 1px solid gray;
 }
-#main .container input[type=text]{
+
+#main .container input[type=text] {
     font-size: xx-large;
     width: 80%;
     width: 700px;
@@ -124,286 +295,27 @@ header .menu_top li a{
 
 .maincontent {
     border-left: 1px solid #000;
-    float: right; /*позиціонуємо праву секцію*/
-    width: 75%; /*ширина відносно розміру пристрою/браузера*/
-    height: 100px; /*висота блоку (для прикладу 250px)*/
+    float: right;
+    /*позиціонуємо праву секцію*/
+    width: 75%;
+    /*ширина відносно розміру пристрою/браузера*/
+    height: 100px;
+    /*висота блоку (для прикладу 250px)*/
     /* margin: 2% 2% 0 0; відступ зверху та справа – по 2% */
     background-color: white;
 }
-.aside {
-    
-    /* position: relative; */
-    float: left; /*позиціонуємо ліву секцію*/
-    width: 25%;
-    height: 100px;
-    /* margin: 2% 0 0 2%; */
-    /* background-color: green; */
-    display: block;
-    justify-content: center;
-}
-.stattext{
-    font-size: 180%;
-    display: flex;
-    justify-content: center;
-}
-.aside .stat{
-    padding: 10% 0 10% 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-.choosestat{
-    margin: 0% 5%;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-}
-input[type=radio]{
-    transform: scale(2.0);
-    margin: 15%;
-}
 
-input[type=radio]:hover{
-    cursor: pointer;
-}
-.man{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    font-size: x-large;
-}
-.woman{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    font-size: x-large;
-}
-.rozmir{
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-}
-.rozmirtext{
-    font-size: 180%;
-    margin-top: 5%;
-    margin-bottom: 1%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.rozmirbuttons{
-    max-width: 220px;
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    margin: 0 auto;
-}
-.rozmirchik{
-    /* background-color: rgba(165, 165, 165, 1); */
-    background-color: white;
-    border: 1.5px solid black;
-    border-radius: 35%;
-    padding: 10px;
-    margin: 2px;
-}
 
-.rozmirchik:hover{
-    cursor: pointer;
-    background-color: #E3E3E3 ;
-}
-.brand{
-    margin: 50px auto;
-    display: flex;
-    justify-content: center;
-}
-/* .inputbrand{
-    display: flex;
-    justify-content: center;
-} */
-.brand{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-label.cbrand{
-    font-size: 180%;
-    margin-bottom: 5%;
-    display: flex;
-    justify-content: center;
-}
-input#cbrand{
-    padding-left: 10px;
-    margin: 0 auto;
-    width: 60%;
-    min-height: 30px;
-    transform: scale(1.2);
-    border-radius: 10px;
-}
 
-.kolors{
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-}
-.kolors .kolort{
-    font-size: 180%;
-    display: flex;
-    justify-content: center;
-    margin-bottom: 10px;
-}
-.kolors div{
-    margin: 0 30% 0 25%;
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-}
-
-.kolors input[type=checkbox]{
-    cursor: pointer;
-    margin-right: 10px;
-    transform: scale(1.7);
-}
-
-.kolors label[for=gray]:hover{
-    cursor: pointer;
-    color: gray;
-    transition: color 0.4 ease;
-    text-decoration: underline;
-}
-.kolors label[for=black]:hover{
-    cursor: pointer;
-    color: black;
-    transition: color 0.4 ease;
-    text-decoration: underline;
-}
-.kolors label[for=white]:hover{
-    cursor: pointer;
-    color: white;
-    transition: color 0.4 ease;
-    text-decoration: underline;
-}
-.kolors label[for=red]:hover{
-    cursor: pointer;
-    color: red;
-    transition: color 0.4 ease;
-    text-decoration: underline;
-}
-.kolors label[for=pink]:hover{
-    cursor: pointer;
-    color: pink;
-    transition: color 0.4 ease;
-    text-decoration: underline;
-}
-.kolors label[for=purple]:hover{
-    cursor: pointer;
-    color: purple;
-    transition: color 0.4 ease;
-    text-decoration: underline;
-}
-.kolors label[for=blue]:hover{
-    cursor: pointer;
-    color: blue;
-    transition: color 0.4 ease;
-    text-decoration: underline;
-}
-.kolors label[for=green]:hover{
-    cursor: pointer;
-    color: green;
-    transition: color 0.4 ease;
-    text-decoration: underline;
-}
-.kolors label[for=yellow]:hover{
-    cursor: pointer;
-    color: yellow;
-    transition: color 0.4 ease;
-    text-decoration: underline;
-}
-.kolors label[for=orange]:hover{
-    cursor: pointer;
-    color: orange;
-    transition: color 0.4 ease;
-    text-decoration: underline;
-}
-.kolors label[for=diffk]:hover{
-    cursor: pointer;
-    background: linear-gradient(135deg, #EB00FF 30%, #0066FF 70%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    transition: color 0.4 ease;
-    text-decoration: underline;
-}
-.aside{
-    height: 100%;
-}
-.maincontent{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    padding: 2% 0% 5% 0%;
-    height: 100%;
-}
-.povsakd{
-    /* height: 10%;
-    margin: 20px auto; */
-}
-.fitness{
-    /* height: 10%;
-    margin: 20px auto; */
-}
-.sport{
-    /* height: 10%;
-    margin: 20px auto; */
-}
-.nike{
-    /* height: 10%;
-    margin: 20px auto; */
-}
-.asics{
-    /* height: 10%;
-    margin: 20px auto; */
-}
-.text1 h1{
-    margin: 10px 0;
-    display: flex;
-    justify-content: center;
-    text-align: center;
-}
-
-.picture img{
-    width: 20%;
-    height: 20%;
-    transition: 1s;
-}
-.picture img:hover{
-    transform: scale(1.1);
-}
-.picture{
-    display: flex;
-    width: 100%;
-    justify-content: space-around;
-    
-}
-.btnkupit{
-    display: flex;
-    justify-content: space-around;
-}
-.btnkupit button{
-    cursor: pointer;
-    border-radius: 25px;
-    margin-top: 15px;
-    padding: 5px 15px;
-    transform: scale(1.3);
-}
-.btnkupit button:hover{
-    background-color: rgb(218, 218, 218);
-}
-main{
-    background-color:#E6E6E6;
+main {
+    background-color: #E6E6E6;
     height: 100%;
     width: 100%;
     position: relative;
 }
-footer{
+
+footer {
+    z-index: 1;
     background-color: #E6E6E6;
     border-top: 1px solid #000;
     border-bottom: 1px solid #000;
@@ -412,18 +324,19 @@ footer{
     margin-top: auto;
     align-items: center;
 }
+
 footer nav {
     display: flex;
     justify-content: space-around;
     align-items: center;
 }
 
-footer nav a{
+footer nav a {
     cursor: pointer;
     color: black;
     text-decoration: none;
 }
 
-footer nav p:hover{
+footer nav p:hover {
     text-decoration: underline;
 }

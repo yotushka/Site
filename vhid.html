@@ -55,31 +55,54 @@
                 </a>
 
                 <!-- Менюшка -->
-                <ul class="menu_top">
-                    <li><a href="vhid.html"><strong>Вхід</strong></a></li>
-                    <li><a href="vhid.html"><strong>Реєстрація</strong></a></li>
-                </ul>
+                <nav>
+                    <ul>
+                        <li><a href="#">Menu</a>
+                            <ul>
+                                <li><a href="#">menu1</a></li>
+                                <li><a href="#">menu2<a></li>
+                                <li><a href="#">menu3</a></li>
+                                <li><a href="#">menu4</a></li>
+                                <li><a href="#">menu5</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Login</a></li>
+                    </ul>
+                </nav>
             </div>
         </header>
         <section>
-            <div id="main" style="background-image: url(https://images.unsplash.com/photo-1504573356050-57fe98afe7ed?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80);">
+            <div id="main">
+                <section class="about">
+                    <video class="video" loop="loop" autoplay="" muted="">
+                        <source src="video/космос вселенная 98.mp4" type="video/mp4" />
+                        <source src="video/космос вселенная 98.mp4" type="video/ogv" />
+                        <source src="video/космос вселенная 98.mp4" type="video/webm" />
+                    </video>
+                    <div class="about-header">
+                        <!-- <img src="https://denis-creative.com/wp-content/uploads/2018/01/about-header-bg-2.png" class="about-header-bg-2" alt=""> -->
+                    </div>
+                    <div class="about-title"></div>
+                    <div class="about-footer"></div>
+                </section>
                 <div class="formvhid">
-                    <label for="name">
-                        <h1>name</h1>
+                    <label class="name">
+                        <h1>Логін</h1>
                     </label>
 
-                    <input id="name" type="text">
+                    <input id="name" type="text" placeholder="o(>ω&lt;)o">
 
-                    <label for="surname">
-                        <h1>surname</h1>
+                    <label class="surname">
+                        <h1>Пароль</h1>
                     </label>
 
-                    <input id="surname" type="text">
+                    <input id="surname" type="text" placeholder="(ﾉ´ヮ)ﾉ*: ･ﾟ">
                     <br>
                     <div id="buttonvhid">
                         <button>Push Me</button></div>
                     <br>
-                    <a href="">Зареєструватися</a>
+                    <a href="#">Забули пароль?</a>
+                    <a href="#">Зареєструватись</a>
                 </div>
             </div>
         </section>
