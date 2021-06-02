@@ -7,7 +7,6 @@
 body {
     font-size: 16px;
     min-width: 320px;
-
     line-height: 1.65;
     font-family: "roboto", sans-serif;
     opacity: 1;
@@ -110,6 +109,7 @@ nav ul li:hover ul {
 }
 
 #main .container {
+    z-index: 1;
     /* margin-top: 100px; */
     padding-top: 150px;
     display: inline-block;
@@ -117,7 +117,9 @@ nav ul li:hover ul {
     align-items: center;
 }
 
-#main .formvhid {
+
+
+#main .tabl {
     z-index: 1;
     display: flex;
     justify-content: center;
@@ -127,58 +129,6 @@ nav ul li:hover ul {
     border: 1px solid pink;
     /* border: 2px solid rebeccapurple; */
     background-color: rgba(0, 0, 0, .4);
-
-}
-
-
-
-
-.formvhid input {
-    border-radius: 5px;
-}
-
-.name {
-    color: white;
-    -webkit-text-stroke: 1px pink;
-}
-
-.surname {
-    color: white;
-    -webkit-text-stroke: 1px pink;
-}
-
-.formvhid button {
-    color: black;
-    border-radius: 5px;
-    transition: color 0.4 ease-in-out;
-}
-
-.formvhid button:hover {
-    background-color: rgb(213, 75, 199);
-    cursor: pointer;
-}
-
-.formvhid a {
-    text-decoration: underline;
-    color: white;
-}
-
-.formvhid a:hover {
-    cursor: pointer;
-    color: pink;
-    transition: color 0.4 ease;
-}
-
-#buttonvhid button {
-    border: 1px solid black;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 5px 10px;
-}
-
-#main .formvhid input {
-    padding: 3px 10px;
 }
 
 .about {
@@ -264,44 +214,6 @@ nav ul li:hover ul {
     }
 }
 
-
-
-.poleposhuk {
-    display: flex;
-}
-
-.poshukbtn {
-    cursor: pointer;
-    font-size: xx-large;
-    width: 20%;
-    padding: 2px 5px;
-    border-top-left-radius: 15px;
-    border-bottom-left-radius: 15px;
-    border: 1px solid gray;
-}
-
-#main .container input[type=text] {
-    font-size: xx-large;
-    width: 80%;
-    width: 700px;
-    min-height: 50px;
-    border-top-right-radius: 15px;
-    border-bottom-right-radius: 15px;
-    border: 1px solid gray;
-    padding-left: 5px;
-}
-
-.maincontent {
-    border-left: 1px solid #000;
-    float: right;
-    /*позиціонуємо праву секцію*/
-    width: 75%;
-    /*ширина відносно розміру пристрою/браузера*/
-    height: 100px;
-    /*висота блоку (для прикладу 250px)*/
-    /* margin: 2% 2% 0 0; відступ зверху та справа – по 2% */
-    background-color: white;
-}
 
 
 
