@@ -119,8 +119,8 @@ nav ul li:hover ul {
 
 
 
-#main .tabl {
-    z-index: 1;
+.tabl {
+    z-index: 4;
     display: flex;
     justify-content: center;
     flex-direction: column;
